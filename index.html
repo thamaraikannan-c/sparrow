@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thamarai Kannan - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .skill-pill:hover {
+            background-color: #3b82f6;
+            color: white;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold">Thamarai Kannan</div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#about" class="hover:text-blue-200 transition">About</a></li>
+                        <li><a href="#experience" class="hover:text-blue-200 transition">Experience</a></li>
+                        <li><a href="#education" class="hover:text-blue-200 transition">Education</a></li>
+                        <li><a href="#skills" class="hover:text-blue-200 transition">Skills</a></li>
+                        <li><a href="#projects" class="hover:text-blue-200 transition">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-blue-200 transition">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 flex justify-center mb-10 md:mb-0">
+                <div class="rounded-full overflow-hidden border-4 border-white shadow-xl w-64 h-64">
+                    <img src="https://via.placeholder.com/300" alt="Profile Picture" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Thamarai Kannan C</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Electronics & Communication Engineer</h2>
+                <p class="text-lg mb-8 max-w-lg mx-auto md:mx-0">
+                    Passionate about designing, testing, and optimizing electronic systems with hands-on experience in IoT and microcontroller projects.
+                </p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition">Contact Me</a>
+                    <a href="https://www.linkedin.com/in/thamarai-kannan-227a37274" target="_blank" class="border-2 border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition">
+                        <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">About Me</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Personal Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-500 mt-1 mr-3"></i>
+                            <p class="text-gray-700">thamaraikannan.0109@gmail.com</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-blue-500 mt-1 mr-3"></i>
+                            <p class="text-gray-700">9345450820</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-birthday-cake text-blue-500 mt-1 mr-3"></i>
+                            <p class="text-gray-700">01-09-2004</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-3"></i>
+                            <p class="text-gray-700">61, Kalliyapper Street, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Objective</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Seeking an opportunity to apply my technical expertise in designing, testing, and optimizing electronic systems, while contributing to innovation and growth within a dynamic engineering team. Eager to leverage my problem-solving abilities, strong communication skills, and hands-on experience to contribute to cutting-edge projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">Experience</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Testing Engineer</h3>
+                                <h4 class="text-lg text-blue-600">Venus Electricals</h4>
+                            </div>
+                            <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                                Sep 2023 - Oct 2023
+                            </div>
+                        </div>
+                        <p class="mt-4 text-gray-600">
+                            Gained hands-on experience in testing electronic components and systems, ensuring quality and performance standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">Education</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">BE in Electronics and Communication Engineering</h3>
+                                <h4 class="text-lg text-blue-600">St. Mother Theresa Engineering College</h4>
+                            </div>
+                            <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                                2022 - 2026
+                            </div>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <span class="text-gray-700 font-medium mr-2">CGPA:</span>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                            <span class="ml-2 text-gray-600">7.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+                <div class="skill-pill bg-white px-6 py-3 rounded-full shadow-md font-medium text-gray-700 transition cursor-pointer">
+                    <i class="fas fa-code mr-2 text-blue-500"></i> C Programming
+                </div>
+                <div class="skill-pill bg-white px-6 py-3 rounded-full shadow-md font-medium text-gray-700 transition cursor-pointer">
+                    <i class="fas fa-code mr-2 text-blue-500"></i> C++
+                </div>
+                <div class="skill-pill bg-white px-6 py-3 rounded-full shadow-md font-medium text-gray-700 transition cursor-pointer">
+                    <i class="fab fa-python mr-2 text-blue-500"></i> Python
+                </div>
+                <div class="skill-pill bg-white px-6 py-3 rounded-full shadow-md font-medium text-gray-700 transition cursor-pointer">
+                    <i class="fas fa-calculator mr-2 text-blue-500"></i> MATLAB
+                </div>
+                <div class="skill-pill bg-white px-6 py-3 rounded-full shadow-md font-medium text-gray-700 transition cursor-pointer">
+                    <i class="fas fa-microchip mr-2 text-blue-500"></i> Arduino
+                </div>
+                <div class="skill-pill bg-white px-6 py-3 rounded-full shadow-md font-medium text-gray-700 transition cursor-pointer">
+                    <i class="fas fa-file-excel mr-2 text-blue-500"></i> Excel
+                </div>
+                <div class="skill-pill bg-white px-6 py-3 rounded-full shadow-md font-medium text-gray-700 transition cursor-pointer">
+                    <i class="fab fa-html5 mr-2 text-blue-500"></i> HTML
+                </div>
+                <div class="skill-pill bg-white px-6 py-3 rounded-full shadow-md font-medium text-gray-700 transition cursor-pointer">
+                    <i class="fas fa-project-diagram mr-2 text-blue-500"></i> IoT
+                </div>
+                <div class="skill-pill bg-white px-6 py-3 rounded-full shadow-md font-medium text-gray-700 transition cursor-pointer">
+                    <i class="fas fa-robot mr-2 text-blue-500"></i> Microcontrollers
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-project-diagram text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">IoT Based Projects</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Developed various IoT applications focusing on sensor networks, data collection, and remote monitoring systems.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-microchip text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Arduino/ESP32 Projects</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Created multiple mini-projects using Arduino, ESP32, and other microcontrollers for automation and control applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Info Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300 p-6">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800 flex items-center">
+                        <i class="fas fa-language text-blue-500 mr-3"></i> Languages
+                    </h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span class="text-gray-700">Tamil (Native)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span class="text-gray-700">English (Fluent)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span class="text-gray-700">Malayalam (Proficient)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300 p-6">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800 flex items-center">
+                        <i class="fas fa-users text-blue-500 mr-3"></i> Activities
+                    </h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span class="text-gray-700">Technical Workshops</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span class="text-gray-700">Webinars</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span class="text-gray-700">Motivational Speaking</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-300 p-6">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800 flex items-center">
+                        <i class="fas fa-user-tie text-blue-500 mr-3"></i> References
+                    </h3>
+                    <p class="text-gray-600">
+                        Available upon request from academic and professional contacts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">Get In Touch</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 gradient-bg text-white p-10">
+                            <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <i class="fas fa-envelope mt-1 mr-4"></i>
+                                    <p>thamaraikannan.0109@gmail.com</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-phone mt-1 mr-4"></i>
+                                    <p>+91 9345450820</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-map-marker-alt mt-1 mr-4"></i>
+                                    <p>61, Kalliyapper Street, India</p>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <h4 class="text-xl font-semibold mb-4">Connect With Me</h4>
+                                <div class="flex space-x-4">
+                                    <a href="https://www.linkedin.com/in/thamarai-kannan-227a37274" target="_blank" class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-100 transition">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-100 transition">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-100 transition">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-10">
+                            <form>
+                                <div class="mb-6">
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div class="mb-6">
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div class="mb-6">
+                                    <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                                </div>
+                                <button type="submit" class="w-full gradient-bg text-white py-3 px-6 rounded-lg font-semibold hover:opacity-90 transition">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">Thamarai Kannan C</h3>
+                    <p class="text-gray-400">Electronics & Communication Engineer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Thamarai Kannan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'hidden bg-white shadow-lg rounded-lg p-4 absolute right-6 top-20 z-50';
+            mobileMenu.innerHTML = `
+                <ul class="space-y-3">
+                    <li><a href="#about" class="block px-4 py-2 hover:bg-gray-100 rounded">About</a></li>
+                    <li><a href="#experience" class="block px-4 py-2 hover:bg-gray-100 rounded">Experience</a></li>
+                    <li><a href="#education" class="block px-4 py-2 hover:bg-gray-100 rounded">Education</a></li>
+                    <li><a href="#skills" class="block px-4 py-2 hover:bg-gray-100 rounded">Skills</a></li>
+                    <li><a href="#projects" class="block px-4 py-2 hover:bg-gray-100 rounded">Projects</a></li>
+                    <li><a href="#contact" class="block px-4 py-2 hover:bg-gray-100 rounded">Contact</a></li>
+                </ul>
+            `;
+            document.body.appendChild(mobileMenu);
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    mobileMenu.classList.add('hidden');
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=blacksparrow5/leo" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
